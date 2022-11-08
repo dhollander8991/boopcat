@@ -1,11 +1,6 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
-import { QwikLogo } from '../icons/qwik';
-import styles from './header.css';
-import { useLocation } from '@builder.io/qwik-city';
-import cityPlan from '@qwik-city-plan';
+import { component$, } from '@builder.io/qwik';
 
 export default component$(() => {
-  const location = useLocation();
   return (
     <div class="container">
       <header class="d-flex justify-content-center py-3">
