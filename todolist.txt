@@ -1,0 +1,5 @@
+1. Change header
+    a. Add color
+    b. Add svg
+2. Add a carousel on the homepage 
+3. Change footer
