@@ -1,14 +1,28 @@
-import { component$, } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
+import { useLocation } from '@builder.io/qwik-city';
 
 export default component$(() => {
+  const menu = [
+    { "text": "Home", "href": "/", "class": "nav-link", },
+    { "text": "Gallery", "href": "/gallery", "class": "nav-link" },
+    { "text": "Support Boop", "href": "", "class": "nav-link" },
+    { "text": "About", "href": "", "class": "nav-link" },
+  ]
+  const { pathname } = useLocation();
   return (
     <div class="container">
       <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="/gallery" class="nav-link">Gallery</a></li>
-          <li class="nav-item"><a href="/" class="nav-link">Support Boop</a></li>
-          <li class="nav-item"><a href="/" class="nav-link">About</a></li>
+          {menu.map((item) => (
+            <li>
+              <a
+                href={item.href}
+                class={pathname == item.href ? "nav-link active" : "nav-link"}
+              >
+                {item.text}
+              </a>
+            </li>
+          ))}
         </ul>
         <svg style="
           height: 40px;
@@ -30,6 +44,6 @@ export default component$(() => {
           </g>
         </svg>
       </header>
-    </div>
+    </div >
   );
 });

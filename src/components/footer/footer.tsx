@@ -2,7 +2,7 @@ import { component$, } from '@builder.io/qwik';
 
 export default component$(() => {
     return (
-        <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <footer class="text-center text-white" style="background-color: #fadde4; width:100vw">
             <div class="container pt-4">
                 <section class="mb-4">
                     <a
@@ -49,9 +49,9 @@ export default component$(() => {
                     ></a>
                 </section>
             </div>
-            <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-                © 2022 Copyright:
-                <a class="text-dark" href="/">boopthebestcat.com</a>
+            <div class="text-center text-dark p-3" style="background-color: #fff;">
+                © 2022 Copyright
+                <a class="text-dark" href="/" style="text-decoration:none"> boopthebestcat.com</a>
             </div>
         </footer>
     );
