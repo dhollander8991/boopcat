@@ -19,10 +19,8 @@ export default component$(() => {
           </div>
         )}
 
-        <button class="w3-button w3-black w3-display-left" onClick$={() => {
-
-        }}>&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onClick$={() => { }}>&#10095;</button>
+        <button class="w3-button w3-black w3-display-left">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right">&#10095;</button>
       </div>
     </div>
   );
