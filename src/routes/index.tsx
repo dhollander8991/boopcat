@@ -15,14 +15,25 @@ export default component$(() => {
 			{
 				name: "Welcome",
 				text: "Welcome to the website dedicated to the number 1 cat in the world! His name is Charles Chacklinton Frenkel Hollander....He has many nicknames the most common one is Boop!",
-				image: "./images/homepage/welcome.png"
+				image: ["./images/homepage/welcome.png"],
+				style: "width: 100vw; height: 51vw;",
+				imageText: []
 
 			},
 			{
 				name: "Birthday",
 				text: "Boop's birthday is on September 17th!",
-				image: "./images/homepage/birthday.png"
+				image: ["./images/homepage/birthday.png"],
+				style: "width: 100vw; height: 51vw;",
+				imageText: []
 
+			},
+			{
+				name: "Top Photos",
+				text: "",
+				image: ["./images/topphotos/1.png", "./images/topphotos/2.png", "./images/topphotos/3.png", "./images/topphotos/4.png",],
+				style: "",
+				imageText: ["aaaaaa", "bbbbbb", "ccccc", "ddddd"]
 			}
 		]
 	}, { recursive: true });
@@ -30,8 +41,17 @@ export default component$(() => {
 		<content>
 			{state.posts.map(post =>
 				<section class="welcome" style="width:100vw; height: 51vw; display: flex;align-items: center;">
-					<div class="image-placeholder" style="position: absolute;">
-						<img src={post.image} style="width: 100vw; height: 51vw;" />
+					<div class="image-placeholder" style="position: absolute; left: 1px;">
+						{post.image.map((image, index) =>
+							<div class={"image-container index_" + index}>
+								<img src={image} style={post.style} class={"image index_" + index} />
+							</div>
+						)}
+						{post.imageText.map((imageText, index) =>
+							<div class={"middle index_" + index}>
+								<div class="text">{imageText}</div>
+							</div>
+						)}
 					</div>
 					<div class="text" style="width: 30vw; margin-left: 10%; z-index:1">
 						<h2 style="font-family: 'amatic sc',cursive; font-size: 60px;">{post.name}</h2>
