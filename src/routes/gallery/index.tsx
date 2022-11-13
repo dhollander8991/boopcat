@@ -4,7 +4,7 @@ export default component$(() => {
 
   const imagesCounter = 27;
   const store = useStore({
-    "images": Array.from(Array(imagesCounter).keys()).map((e, index) => "./" + (index + 1) + ".jpeg")
+    "images": Array.from(Array(imagesCounter).keys()).map((e, index) => "/images/gallery/" + (index + 1) + ".jpeg")
   })
   return (
     <div class="gallery-container" style="margin-bottom: 15px">
