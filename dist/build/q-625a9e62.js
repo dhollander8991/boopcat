@@ -1,1 +1,0 @@
-import{c as t,q as o,_ as e}from"./q-2ae7c13b.js";const _=t(o(()=>e(()=>import("./q-bf975aa6.js"),["build/q-bf975aa6.js","build/q-2ae7c13b.js"]),"s_xYL1qOwPyDI")),a={title:"Boop the best cat in the world"};export{_ as default,a as head};
