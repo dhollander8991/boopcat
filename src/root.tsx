@@ -1,5 +1,7 @@
 import { component$, useStyles$ } from '@builder.io/qwik';
 import { QwikCity, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
+import { QwikPartytown } from './components/partytown/partytown';
+
 // import { RouterHead } from './components/router-head/router-head';
 
 import globalStyles from './global.css?inline';
@@ -16,6 +18,8 @@ export default component$(() => {
   return (
     <QwikCity>
       <head>
+        <QwikPartytown forward={["dataLayer.push"]} />
+        <script async type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-Q45QV4LVND"></script>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossOrigin="anonymous" />
