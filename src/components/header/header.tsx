@@ -5,10 +5,11 @@ export default component$(() => {
   const menu = [
     { "text": "Home", "href": "/", "class": "nav-link", },
     { "text": "Gallery", "href": "/gallery", "class": "nav-link" },
-    // { "text": "Cats History", "href": "/articles", "class": "nav-link" },
-    // { "text": "Blog", "href": "/blog", "class": "nav-link" },
-    { "text": "Support Boop", "href": "", "class": "nav-link" },
-    { "text": "About", "href": "", "class": "nav-link" },
+    { "text": "Videos", "href": "/videos", "class": "nav-link" },
+    { "text": "Cats Info", "href": "/articles", "class": "nav-link" },
+    { "text": "Blog", "href": "/blog", "class": "nav-link" },
+    { "text": "Support Boop", "href": "/support", "class": "nav-link" },
+    { "text": "About", "href": "/about", "class": "nav-link" },
   ]
   const { pathname } = useLocation();
   return (

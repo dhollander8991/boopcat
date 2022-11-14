@@ -15,7 +15,7 @@ export default component$(() => {
 			{
 				name: "Welcome",
 				text: "Welcome to the website dedicated to the number 1 cat in the world! His name is Charles Chacklinton Frenkel Hollander....He has many nicknames the most common one is Boop!",
-				image: ["./images/homepage/welcome.png"],
+				image: ["./images/homepage/welcome.webp"],
 				style: "width: 100vw; height: 51vw;",
 				imageText: []
 
@@ -23,7 +23,7 @@ export default component$(() => {
 			{
 				name: "Birthday",
 				text: "Boop's birthday is on September 17th!",
-				image: ["./images/homepage/birthday.png"],
+				image: ["./images/homepage/birthday.webp"],
 				style: "width: 100vw; height: 51vw;",
 				imageText: []
 
@@ -31,7 +31,7 @@ export default component$(() => {
 			{
 				name: "Top Photos",
 				text: "",
-				image: ["./images/topphotos/1.png", "./images/topphotos/2.png", "./images/topphotos/3.png", "./images/topphotos/4.png",],
+				image: ["./images/topphotos/1.webp", "./images/topphotos/2.webp", "./images/topphotos/3.webp", "./images/topphotos/4.webp",],
 				style: "",
 				imageText: ["aaaaaa", "bbbbbb", "ccccc", "ddddd"]
 			}

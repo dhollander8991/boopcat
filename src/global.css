@@ -177,3 +177,17 @@ section:nth-child(2n) {
         height: auto !important;
     }
 }
+
+.mySlides {
+    animation: opac 0.8s
+}
+
+@keyframes opac {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}

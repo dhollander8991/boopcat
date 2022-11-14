@@ -7,7 +7,7 @@ export default component$(() => {
       <main>
         <Header />
         <div class="image-header">
-          <img src="/images/header/header.png" style="width: 100vw;" />
+          <img src="/images/header/header.webp" style="width: 100vw;" />
         </div>
         <div class="main-container">
           <Slot />

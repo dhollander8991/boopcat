@@ -1,2 +1,7 @@
-3. Change footer
-5. Add countdown to birthday section
+2. Add cats info section
+3. populate the about us
+4. populate the support boop
+5. Add links to footer
+6. Add countdown to birthday section
+7. Add video section
+8. Adapt nav bar to mobile
