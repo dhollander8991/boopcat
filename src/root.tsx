@@ -1,7 +1,8 @@
+/* eslint-disable prefer-rest-params */
 import { component$, useStyles$ } from '@builder.io/qwik';
 import { QwikCity, RouterOutlet, ServiceWorkerRegister } from '@builder.io/qwik-city';
 import { QwikPartytown } from './components/partytown/partytown';
-
+import GA from './components/googleanalytics/ga';
 // import { RouterHead } from './components/router-head/router-head';
 
 import globalStyles from './global.css?inline';
@@ -20,6 +21,7 @@ export default component$(() => {
       <head>
         <QwikPartytown forward={["dataLayer.push"]} />
         <script async type="text/partytown" src="https://www.googletagmanager.com/gtag/js?id=G-Q45QV4LVND"></script>
+        <GA />
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossOrigin="anonymous" />
@@ -31,6 +33,8 @@ export default component$(() => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body lang="en">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KS6H988"
+          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

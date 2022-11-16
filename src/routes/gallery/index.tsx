@@ -3,7 +3,7 @@ import { component$, useStore } from '@builder.io/qwik';
 export default component$(() => {
   const imagesCounter = 27;
   const store = useStore({
-    "images": Array.from(Array(imagesCounter).keys()).map((e, index) => "/images/gallery/" + (index + 1) + ".jpeg")
+    "images": Array.from(Array(imagesCounter).keys()).map((e, index) => "/images/gallery/" + (index + 1) + ".webp")
   })
   return (
     <div class="gallery-container" style="margin-bottom: 15px">
@@ -20,7 +20,6 @@ export default component$(() => {
 
         <button class="w3-button w3-black w3-display-left" onClick$={() => {
           const el = document.querySelector(".mySlides.show");
-          // console.log(el);
           if (el != null) {
             const currentImageIndex = Array.from(document.querySelectorAll(".mySlides")).findIndex(e => e.classList[1] == "show");
             const arrayLength = Array.from(document.querySelectorAll(".mySlides")).length;
