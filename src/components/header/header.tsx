@@ -6,7 +6,7 @@ export default component$(() => {
     { "text": "Home", "href": "/", "class": "nav-link", },
     { "text": "Gallery", "href": "/gallery", "class": "nav-link" },
     { "text": "Videos", "href": "/videos", "class": "nav-link" },
-    // { "text": "Cats Info", "href": "/articles", "class": "nav-link" },
+    { "text": "Cats Info", "href": "/articles", "class": "nav-link" },
     // { "text": "About", "href": "/about", "class": "nav-link" },
   ]
   const { pathname } = useLocation();
