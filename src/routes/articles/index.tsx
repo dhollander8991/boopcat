@@ -4,7 +4,7 @@ import { component$ } from '@builder.io/qwik';
 export default component$(() => {
     return (
         <div class="about-us">
-            <a href='/articles/101facts'>tips for cats</a>
+            <a href='/articles/facts'>tips for cats</a>
         </div>
     );
 });
